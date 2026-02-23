@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Serif SC", "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --color-mystic-black: #000000;
+  --color-mystic-white: #ffffff;
+  --color-mystic-purple: rgba(220, 200, 255, 0.9);
+  --color-mystic-gold: rgba(212, 175, 55, 0.85);
+
+  --color-glass-base: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-mystic-black);
+  color: var(--color-mystic-white);
+  font-family: var(--font-sans);
+  overflow: hidden;
+  /* For full screen presentation */
+}
+
+/* Custom Glassmorphism Utility that avoids Tailwind v4 restrictions until extended */
+@layer utilities {
+  .glass-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    backdrop-filter: blur(24px) saturate(1.6);
+    -webkit-backdrop-filter: blur(24px) saturate(1.6);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: none;
+    /* prompt requirement: No shadows */
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Left-top specular highlight */
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Typography shortcuts */
+  .mystic-title {
+    font-family: var(--font-serif);
+    background: linear-gradient(to right, #fff, var(--color-mystic-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

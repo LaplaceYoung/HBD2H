@@ -1,0 +1,129 @@
+.cardContainer {
+    width: 160px;
+    height: 275px;
+    /* Typical tarot proportion */
+    perspective: 1000px;
+    cursor: default;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: floatIn 0.8s ease-out backwards;
+}
+
+.cardContainer.interactive {
+    cursor: pointer;
+}
+
+.cardContainer.interactive:hover {
+    transform: translateY(-15px) scale(1.05);
+    z-index: 10;
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.cardInner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transform-style: preserve-3d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.cardInner.flipped {
+    transform: rotateY(180deg);
+}
+
+.cardFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    background-color: var(--color-bg-base);
+}
+
+.cardFace img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.reversedImage {
+    transform: rotate(180deg);
+}
+
+.cardBack {
+    transform: rotateY(0deg);
+}
+
+.cardFront {
+    transform: rotateY(180deg);
+}
+
+/* Subtly animated glow on hover */
+.cardGlow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px rgba(212, 175, 55, 0);
+    transition: box-shadow 0.4s ease;
+    pointer-events: none;
+}
+
+.cardContainer.interactive:hover .cardGlow {
+    box-shadow: inset 0 0 30px rgba(212, 175, 55, 0.4);
+}
+
+/* Semi-transparent overlay at bottom when flipped to show name briefly or permanently */
+.cardOverlayInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, transparent 100%);
+    padding: 20px 10px 10px;
+    text-align: center;
+    color: var(--color-gold-base);
+    font-family: var(--font-heading);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.cardContainer:hover .cardOverlayInfo {
+    transform: translateY(0%);
+}
+
+.cardName {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.cardOrientation {
+    display: block;
+    font-size: 0.8rem;
+    color: #ff6b6b;
+    margin-top: 2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
