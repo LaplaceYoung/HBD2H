@@ -11,7 +11,7 @@ export const CoverSlide: React.FC = () => {
                 className="absolute top-0 left-0 w-full flex justify-between items-center text-xs tracking-[0.2em] opacity-80"
             >
                 <div className="flex items-center gap-2">
-                    <img src="/hyj-logo.svg" alt="HYJ Logo" className="w-8 h-8 opacity-90" />
+                    <img src="hyj-logo.svg" alt="HYJ Logo" className="w-8 h-8 opacity-90" />
                     <span className="uppercase font-serif text-white/90">HYJ TAROT</span>
                 </div>
                 <div>命运之眼 · 2026</div>
