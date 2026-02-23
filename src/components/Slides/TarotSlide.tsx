@@ -148,9 +148,10 @@ export const TarotSlide: React.FC = () => {
             <div className="flex items-center justify-center gap-3 pt-4 pb-4 w-full shrink-0">
                 <button
                     onClick={() => { setHasStarted(false); resetCards(); }}
-                    className="absolute left-4 top-4 text-white/30 hover:text-white/70 text-sm tracking-wider transition-colors duration-300"
+                    className="absolute left-4 top-4 text-white/40 hover:text-white/80 transition-colors z-[60] flex items-center gap-1"
                 >
-                    ← 返回
+                    <span className="text-xl">←</span>
+                    <span className="hidden md:inline tracking-wider text-sm">返回</span>
                 </button>
 
                 {Object.values(SPREADS).map((s) => (

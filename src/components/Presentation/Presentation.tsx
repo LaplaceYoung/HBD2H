@@ -73,7 +73,7 @@ export const Presentation: React.FC<PresentationProps> = ({ slides }) => {
 
     return (
         <div
-            className="relative w-screen h-screen overflow-hidden bg-black text-white font-sans"
+            className="relative w-screen h-[100dvh] overflow-hidden bg-black text-white font-sans"
             onWheel={handleWheel}
         >
             {/* 背景视频（本地静音轮播） */}
@@ -102,7 +102,7 @@ export const Presentation: React.FC<PresentationProps> = ({ slides }) => {
                                     animate={{ opacity: 1, scale: 1 }}
                                     exit={{ opacity: 0, scale: 1.05 }}
                                     transition={{ duration: 0.5, ease: 'easeInOut' }}
-                                    className="w-full h-full absolute inset-0 flex flex-col items-center justify-center p-[5.2%]"
+                                    className="w-full h-full absolute inset-0 flex flex-col items-center justify-center p-[4%] md:p-[5.2%] pb-[120px] md:pb-[5.2%]"
                                 >
                                     <Slide />
                                 </motion.div>
@@ -112,51 +112,52 @@ export const Presentation: React.FC<PresentationProps> = ({ slides }) => {
             </div>
 
             {/* 底部导航 */}
-            <div className="absolute bottom-[4%] left-0 w-full px-[5.2%] flex justify-between items-center z-50 text-white/50 text-sm tracking-widest">
-                <div className="w-1/3 text-left">
+            <div className="absolute bottom-[2%] md:bottom-[4%] left-0 w-full px-[5.2%] flex justify-between items-center z-50 text-white/50 text-sm tracking-widest pointer-events-none">
+                <div className="w-1/4 text-xs md:text-sm text-left opacity-60">
                     {toRoman(currentSlide)} / {toRoman(slides.length - 1)}
                 </div>
 
-                <div className="w-1/3 flex justify-center items-center gap-3">
+                <div className="w-2/4 flex justify-center items-center gap-2 md:gap-3 pointer-events-auto">
                     {slides.map((_, idx) => (
                         <div
                             key={idx}
                             className={`transition-all duration-500 rounded-full cursor-pointer ${idx === currentSlide
-                                ? 'w-8 h-1.5 bg-white/90'
-                                : 'w-1.5 h-1.5 bg-white/30 hover:bg-white/50'
+                                ? 'w-6 md:w-8 h-1 bg-white/90'
+                                : 'w-1 md:w-1.5 h-1 bg-white/20 hover:bg-white/50'
                                 }`}
                             onClick={() => setCurrentSlide(idx)}
                         />
                     ))}
                 </div>
 
-                <div className="w-1/3 flex justify-end items-center gap-6">
+                <div className="w-1/4 flex justify-end items-center gap-4 md:gap-6 pointer-events-auto">
                     <button
                         onClick={() => setCurrentSlide((p) => Math.max(p - 1, 0))}
-                        className="hover:text-white transition-colors disabled:opacity-30"
+                        className="hover:text-white transition-colors disabled:opacity-30 hidden md:block"
                         disabled={currentSlide === 0}
                     >
                         <ChevronUp size={20} />
                     </button>
                     <button
                         onClick={() => setCurrentSlide((p) => Math.min(p + 1, slides.length - 1))}
-                        className="hover:text-white transition-colors disabled:opacity-30"
+                        className="hover:text-white transition-colors disabled:opacity-30 hidden md:block"
                         disabled={currentSlide === slides.length - 1}
                     >
                         <ChevronDown size={20} />
                     </button>
-                    <button onClick={toggleFullscreen} className="hover:text-white transition-colors ml-4">
+                    <button onClick={toggleFullscreen} className="hover:text-white transition-colors ml-0 md:ml-4">
                         <Maximize size={18} />
                     </button>
                     <button
                         onClick={() => setShowApiConfig(true)}
-                        className="hover:text-[var(--color-mystic-gold)] transition-colors ml-4"
+                        className="hover:text-[var(--color-mystic-gold)] transition-colors ml-2 md:ml-4"
                         title="配置 API Key"
                     >
                         <Settings size={18} />
                     </button>
                 </div>
             </div>
+
 
             {/* API 配置面板 */}
             <ApiConfigPanel isOpen={showApiConfig} onClose={() => setShowApiConfig(false)} />

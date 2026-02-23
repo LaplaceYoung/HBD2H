@@ -17,17 +17,16 @@
 .readingContainer {
     position: relative;
     width: 1100px;
-    max-width: 95vw;
-    height: 85vh;
-    max-height: 800px;
+    max-width: 96vw;
+    height: 90dvh;
+    max-height: 900px;
     display: flex;
     flex-direction: column;
-    padding: 2px;
+    padding: 0;
     overflow: hidden;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.15);
     background: linear-gradient(135deg, rgba(8, 8, 12, 0.98), rgba(13, 13, 18, 0.96));
     border-radius: 24px;
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9), 0 0 120px rgba(212, 175, 55, 0.08);
 }
 
 .splitContent {
@@ -37,27 +36,39 @@
     overflow: hidden;
 }
 
+@media (max-width: 900px) {
+    .splitContent {
+        flex-direction: column;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    .splitContent::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 /* --- Left Side: Card Visuals --- */
 .leftSide {
     flex: 0 0 42%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, transparent 80%);
     border-right: 1px solid rgba(255, 255, 255, 0.04);
     position: relative;
-    padding: 60px 40px;
-    justify-content: space-between;
-    /* 确保导航在底部 */
+    padding: 40px 20px;
+    justify-content: center;
 }
 
-.cardHeroContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+@media (max-width: 900px) {
+    .leftSide {
+        flex: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 50px 20px;
+    }
 }
 
 .cardHeroWrapper {
@@ -65,133 +76,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    perspective: 2000px;
+    perspective: 1500px;
 }
 
 .cardImageContainer {
     position: relative;
-    width: 240px;
-    height: 415px;
-    margin-bottom: 40px;
+    width: 200px;
+    height: 340px;
+    margin-bottom: 30px;
     transform-style: preserve-3d;
-    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.7));
+}
+
+@media (max-width: 900px) {
+    .cardImageContainer {
+        width: 140px;
+        height: 240px;
+        margin-bottom: 20px;
+    }
 }
 
 .heroImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 14px;
-    border: 1px solid rgba(212, 175, 55, 0.25);
-}
-
-.heroImage.reversed {
-    transform: rotate(180deg);
-}
-
-.cardAura {
-    position: absolute;
-    inset: -30px;
-    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.2) 0%, transparent 75%);
-    z-index: -1;
-    pointer-events: none;
-    animation: auraPulse 5s infinite alternate ease-in-out;
-}
-
-@keyframes auraPulse {
-    0% {
-        opacity: 0.2;
-        transform: scale(0.9) translateZ(-50px);
-    }
-
-    100% {
-        opacity: 0.7;
-        transform: scale(1.15) translateZ(-10px);
-    }
-}
-
-.cardInfo {
-    text-align: center;
-    padding: 0 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .heroCardName {
     font-family: var(--font-serif);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--color-mystic-gold);
-    margin: 0 0 12px 0;
-    letter-spacing: 0.15em;
-    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    margin: 0 0 8px 0;
+    letter-spacing: 0.1em;
 }
 
-.badgeWrapper {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.heroPosition {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    background: rgba(255, 255, 255, 0.04);
-    padding: 4px 14px;
-    border-radius: 100px;
-}
-
-.orientationTag {
-    font-size: 0.8rem;
-    color: var(--color-mystic-gold);
-    background: rgba(212, 175, 55, 0.1);
-    padding: 4px 14px;
-    border-radius: 100px;
-    font-weight: 500;
-}
-
-.orientationTag.rev {
-    color: #ff8c00;
-    background: rgba(255, 140, 0, 0.1);
-}
-
-/* Navigation Controls */
-.navControls {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    border-radius: 100px;
-}
-
-.navBtn {
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.4);
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.navBtn:hover {
-    color: var(--color-mystic-gold);
-    transform: scale(1.1);
-}
-
-.navIndicator {
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.3);
-    font-family: var(--font-mono);
-    letter-spacing: 0.2em;
+@media (max-width: 900px) {
+    .heroCardName {
+        font-size: 1.5rem;
+    }
 }
 
 /* --- Right Side: Reading Content --- */
@@ -199,40 +123,66 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 80px 60px;
+    padding: 50px 40px;
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .rightSide {
+        overflow: visible;
+        padding: 30px 20px 80px 20px;
+    }
 }
 
 .contentWrapper {
     height: 100%;
     overflow-y: auto;
-    padding-right: 25px;
-    scrollbar-width: none;
-    /* Hide standard scrollbar */
+    padding-right: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(212, 175, 55, 0.1) transparent;
 }
 
-.contentWrapper::-webkit-scrollbar {
-    display: none;
+.navControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    width: fit-content;
+    align-self: center;
+}
+
+@media (max-width: 900px) {
+    .navControls {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        transform: scale(0.9);
+    }
 }
 
 .closeBtn {
     position: absolute;
-    top: 30px;
-    right: 30px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    color: rgba(255, 255, 255, 0.2);
-    width: 44px;
-    height: 44px;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s;
-    z-index: 20;
+    z-index: 100;
 }
+
 
 .closeBtn:hover {
     color: var(--color-mystic-gold);
