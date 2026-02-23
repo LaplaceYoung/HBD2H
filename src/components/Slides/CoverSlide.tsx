@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-
 export const CoverSlide: React.FC = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full h-full text-center relative">
@@ -18,7 +17,6 @@ export const CoverSlide: React.FC = () => {
                 <div>命运之眼 · 2026</div>
             </motion.div>
 
-
             <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -32,8 +30,15 @@ export const CoverSlide: React.FC = () => {
                     解码宇宙隐藏的信号
                 </p>
 
-
                 <div className="glass-card px-8 py-3 rounded-full text-sm tracking-wider text-white/75 mt-4">
-                    首席占卜师：奥拉(Oracle)
+                    首席占卜师: 奥拉(Oracle)
+                </div>
+                
+                <div className="mt-8 flex flex-col items-center gap-2 opacity-60">
+                    <div className="w-px h-12 bg-gradient-to-b from-white to-transparent" />
+                    <span className="text-[10px] tracking-[0.3em] font-light">向下滑动开启灵魂解读</span>
                 </div>
             </motion.div>
+        </div>
+    );
+};
