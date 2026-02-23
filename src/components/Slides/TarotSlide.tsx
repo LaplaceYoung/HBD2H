@@ -33,6 +33,7 @@ export const TarotSlide: React.FC = () => {
         const newDrawnCards = [...drawnCards];
         newDrawnCards[index] = sessionDeck[index];
         setDrawnCards(newDrawnCards);
+
         const isComplete = newDrawnCards.every(c => c !== null);
         if (isComplete) {
             startReadingInBackground(newDrawnCards as DrawnCard[]);
@@ -220,7 +221,7 @@ export const TarotSlide: React.FC = () => {
                 <ReadingResult
                     content={readingContent}
                     loading={isReadingLoading}
-                    cards={drawnCards as DrawnCard[]}
+                    cards={drawnCards.filter((c): c is DrawnCard => c !== null)}
                     initialFocusedIndex={focusedCardIndex}
                     onClose={() => setShowResultModal(false)}
                 />

@@ -2,32 +2,32 @@
   {
     "id": "00",
     "nameEn": "The Fool",
-    "nameZh": "愚�?,
+    "nameZh": "愚者",
     "type": "major",
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/00_The_Fool_愚�?jpeg"
+    "image": "/cards/00_The_Fool_愚者.jpeg"
   },
   {
     "id": "01",
     "nameEn": "The Magician",
-    "nameZh": "魔术�?,
+    "nameZh": "魔术师",
     "type": "major",
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/01_The_Magician_魔术�?jpeg"
+    "image": "/cards/01_The_Magician_魔术师.jpeg"
   },
   {
     "id": "02",
     "nameEn": "The High Priestess",
-    "nameZh": "女祭�?,
+    "nameZh": "女祭司",
     "type": "major",
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/02_The_High_Priestess_女祭�?jpeg"
+    "image": "/cards/02_The_High_Priestess_女祭司.jpeg"
   },
   {
     "id": "03",
@@ -37,7 +37,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/03_The_Empress_皇后.jpeg"
+    "image": "/cards/03_The_Empress_皇后.jpeg"
   },
   {
     "id": "04",
@@ -47,7 +47,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/04_The_Emperor_皇帝.jpeg"
+    "image": "/cards/04_The_Emperor_皇帝.jpeg"
   },
   {
     "id": "05",
@@ -57,7 +57,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/05_The_Hierophant_教皇.jpeg"
+    "image": "/cards/05_The_Hierophant_教皇.jpeg"
   },
   {
     "id": "06",
@@ -67,7 +67,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/06_The_Lovers_恋人.jpeg"
+    "image": "/cards/06_The_Lovers_恋人.jpeg"
   },
   {
     "id": "07",
@@ -77,7 +77,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/07_The_Chariot_战车.jpeg"
+    "image": "/cards/07_The_Chariot_战车.jpeg"
   },
   {
     "id": "08",
@@ -87,7 +87,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/08_Strength_力量.jpeg"
+    "image": "/cards/08_Strength_力量.jpeg"
   },
   {
     "id": "09",
@@ -97,7 +97,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/09_The_Hermit_隐士.jpeg"
+    "image": "/cards/09_The_Hermit_隐士.jpeg"
   },
   {
     "id": "10",
@@ -107,7 +107,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/10_Wheel_of_Fortune_命运之轮.jpeg"
+    "image": "/cards/10_Wheel_of_Fortune_命运之轮.jpeg"
   },
   {
     "id": "11",
@@ -117,17 +117,17 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/11_Justice_正义.jpeg"
+    "image": "/cards/11_Justice_正义.jpeg"
   },
   {
     "id": "12",
     "nameEn": "The Hanged Man",
-    "nameZh": "倒吊�?,
+    "nameZh": "倒吊人",
     "type": "major",
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/12_The_Hanged_Man_倒吊�?jpeg"
+    "image": "/cards/12_The_Hanged_Man_倒吊人.jpeg"
   },
   {
     "id": "13",
@@ -137,7 +137,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/13_Death_死神.jpeg"
+    "image": "/cards/13_Death_死神.jpeg"
   },
   {
     "id": "14",
@@ -147,7 +147,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/14_Temperance_节制.jpeg"
+    "image": "/cards/14_Temperance_节制.jpeg"
   },
   {
     "id": "15",
@@ -157,7 +157,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/15_The_Devil_恶魔.jpeg"
+    "image": "/cards/15_The_Devil_恶魔.jpeg"
   },
   {
     "id": "16",
@@ -167,7 +167,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/16_The_Tower_高塔.jpeg"
+    "image": "/cards/16_The_Tower_高塔.jpeg"
   },
   {
     "id": "17",
@@ -177,7 +177,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/17_The_Star_星星.jpeg"
+    "image": "/cards/17_The_Star_星星.jpeg"
   },
   {
     "id": "18",
@@ -187,7 +187,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/18_The_Moon_月亮.jpeg"
+    "image": "/cards/18_The_Moon_月亮.jpeg"
   },
   {
     "id": "19",
@@ -197,7 +197,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/19_The_Sun_太阳.jpeg"
+    "image": "/cards/19_The_Sun_太阳.jpeg"
   },
   {
     "id": "20",
@@ -207,7 +207,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/20_Judgement_审判.jpeg"
+    "image": "/cards/20_Judgement_审判.jpeg"
   },
   {
     "id": "21",
@@ -217,7 +217,7 @@
     "suit": null,
     "pip": null,
     "court": null,
-    "image": "cards/21_The_World_世界.jpeg"
+    "image": "/cards/21_The_World_世界.jpeg"
   },
   {
     "id": "22",
@@ -227,97 +227,97 @@
     "suit": "wands",
     "pip": "ace",
     "court": null,
-    "image": "cards/22_Ace_of_Wands_权杖王牌.jpeg"
+    "image": "/cards/22_Ace_of_Wands_权杖王牌.jpeg"
   },
   {
     "id": "23",
     "nameEn": "Two of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖二",
     "type": "minor",
     "suit": "wands",
     "pip": "two",
     "court": null,
-    "image": "cards/23_Two_of_Wands_权杖�?jpeg"
+    "image": "/cards/23_Two_of_Wands_权杖二.jpeg"
   },
   {
     "id": "24",
     "nameEn": "Three of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖三",
     "type": "minor",
     "suit": "wands",
     "pip": "three",
     "court": null,
-    "image": "cards/24_Three_of_Wands_权杖�?jpeg"
+    "image": "/cards/24_Three_of_Wands_权杖三.jpeg"
   },
   {
     "id": "25",
     "nameEn": "Four of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖四",
     "type": "minor",
     "suit": "wands",
     "pip": "four",
     "court": null,
-    "image": "cards/25_Four_of_Wands_权杖�?jpeg"
+    "image": "/cards/25_Four_of_Wands_权杖四.jpeg"
   },
   {
     "id": "26",
     "nameEn": "Five of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖五",
     "type": "minor",
     "suit": "wands",
     "pip": "five",
     "court": null,
-    "image": "cards/26_Five_of_Wands_权杖�?jpeg"
+    "image": "/cards/26_Five_of_Wands_权杖五.jpeg"
   },
   {
     "id": "27",
     "nameEn": "Six of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖六",
     "type": "minor",
     "suit": "wands",
     "pip": "six",
     "court": null,
-    "image": "cards/27_Six_of_Wands_权杖�?jpeg"
+    "image": "/cards/27_Six_of_Wands_权杖六.jpeg"
   },
   {
     "id": "28",
     "nameEn": "Seven of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖七",
     "type": "minor",
     "suit": "wands",
     "pip": "seven",
     "court": null,
-    "image": "cards/28_Seven_of_Wands_权杖�?jpeg"
+    "image": "/cards/28_Seven_of_Wands_权杖七.jpeg"
   },
   {
     "id": "29",
     "nameEn": "Eight of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖八",
     "type": "minor",
     "suit": "wands",
     "pip": "eight",
     "court": null,
-    "image": "cards/29_Eight_of_Wands_权杖�?jpeg"
+    "image": "/cards/29_Eight_of_Wands_权杖八.jpeg"
   },
   {
     "id": "30",
     "nameEn": "Nine of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖九",
     "type": "minor",
     "suit": "wands",
     "pip": "nine",
     "court": null,
-    "image": "cards/30_Nine_of_Wands_权杖�?jpeg"
+    "image": "/cards/30_Nine_of_Wands_权杖九.jpeg"
   },
   {
     "id": "31",
     "nameEn": "Ten of Wands",
-    "nameZh": "权杖�?,
+    "nameZh": "权杖十",
     "type": "minor",
     "suit": "wands",
     "pip": "ten",
     "court": null,
-    "image": "cards/31_Ten_of_Wands_权杖�?jpeg"
+    "image": "/cards/31_Ten_of_Wands_权杖十.jpeg"
   },
   {
     "id": "32",
@@ -327,7 +327,7 @@
     "suit": "wands",
     "pip": null,
     "court": "page",
-    "image": "cards/32_Page_of_Wands_权杖侍从.jpeg"
+    "image": "/cards/32_Page_of_Wands_权杖侍从.jpeg"
   },
   {
     "id": "33",
@@ -337,7 +337,7 @@
     "suit": "wands",
     "pip": null,
     "court": "knight",
-    "image": "cards/33_Knight_of_Wands_权杖骑士.jpeg"
+    "image": "/cards/33_Knight_of_Wands_权杖骑士.jpeg"
   },
   {
     "id": "34",
@@ -347,7 +347,7 @@
     "suit": "wands",
     "pip": null,
     "court": "queen",
-    "image": "cards/34_Queen_of_Wands_权杖王后.jpeg"
+    "image": "/cards/34_Queen_of_Wands_权杖王后.jpeg"
   },
   {
     "id": "35",
@@ -357,7 +357,7 @@
     "suit": "wands",
     "pip": null,
     "court": "king",
-    "image": "cards/35_King_of_Wands_权杖国王.jpeg"
+    "image": "/cards/35_King_of_Wands_权杖国王.jpeg"
   },
   {
     "id": "36",
@@ -367,97 +367,97 @@
     "suit": "cups",
     "pip": "ace",
     "court": null,
-    "image": "cards/36_Ace_of_Cups_圣杯王牌.jpeg"
+    "image": "/cards/36_Ace_of_Cups_圣杯王牌.jpeg"
   },
   {
     "id": "37",
     "nameEn": "Two of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯二",
     "type": "minor",
     "suit": "cups",
     "pip": "two",
     "court": null,
-    "image": "cards/37_Two_of_Cups_圣杯�?jpeg"
+    "image": "/cards/37_Two_of_Cups_圣杯二.jpeg"
   },
   {
     "id": "38",
     "nameEn": "Three of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯三",
     "type": "minor",
     "suit": "cups",
     "pip": "three",
     "court": null,
-    "image": "cards/38_Three_of_Cups_圣杯�?jpeg"
+    "image": "/cards/38_Three_of_Cups_圣杯三.jpeg"
   },
   {
     "id": "39",
     "nameEn": "Four of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯四",
     "type": "minor",
     "suit": "cups",
     "pip": "four",
     "court": null,
-    "image": "cards/39_Four_of_Cups_圣杯�?jpeg"
+    "image": "/cards/39_Four_of_Cups_圣杯四.jpeg"
   },
   {
     "id": "40",
     "nameEn": "Five of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯五",
     "type": "minor",
     "suit": "cups",
     "pip": "five",
     "court": null,
-    "image": "cards/40_Five_of_Cups_圣杯�?jpeg"
+    "image": "/cards/40_Five_of_Cups_圣杯五.jpeg"
   },
   {
     "id": "41",
     "nameEn": "Six of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯六",
     "type": "minor",
     "suit": "cups",
     "pip": "six",
     "court": null,
-    "image": "cards/41_Six_of_Cups_圣杯�?jpeg"
+    "image": "/cards/41_Six_of_Cups_圣杯六.jpeg"
   },
   {
     "id": "42",
     "nameEn": "Seven of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯七",
     "type": "minor",
     "suit": "cups",
     "pip": "seven",
     "court": null,
-    "image": "cards/42_Seven_of_Cups_圣杯�?jpeg"
+    "image": "/cards/42_Seven_of_Cups_圣杯七.jpeg"
   },
   {
     "id": "43",
     "nameEn": "Eight of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯八",
     "type": "minor",
     "suit": "cups",
     "pip": "eight",
     "court": null,
-    "image": "cards/43_Eight_of_Cups_圣杯�?jpeg"
+    "image": "/cards/43_Eight_of_Cups_圣杯八.jpeg"
   },
   {
     "id": "44",
     "nameEn": "Nine of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯九",
     "type": "minor",
     "suit": "cups",
     "pip": "nine",
     "court": null,
-    "image": "cards/44_Nine_of_Cups_圣杯�?jpeg"
+    "image": "/cards/44_Nine_of_Cups_圣杯九.jpeg"
   },
   {
     "id": "45",
     "nameEn": "Ten of Cups",
-    "nameZh": "圣杯�?,
+    "nameZh": "圣杯十",
     "type": "minor",
     "suit": "cups",
     "pip": "ten",
     "court": null,
-    "image": "cards/45_Ten_of_Cups_圣杯�?jpeg"
+    "image": "/cards/45_Ten_of_Cups_圣杯十.jpeg"
   },
   {
     "id": "46",
@@ -467,7 +467,7 @@
     "suit": "cups",
     "pip": null,
     "court": "page",
-    "image": "cards/46_Page_of_Cups_圣杯侍从.jpeg"
+    "image": "/cards/46_Page_of_Cups_圣杯侍从.jpeg"
   },
   {
     "id": "47",
@@ -477,7 +477,7 @@
     "suit": "cups",
     "pip": null,
     "court": "knight",
-    "image": "cards/47_Knight_of_Cups_圣杯骑士.jpeg"
+    "image": "/cards/47_Knight_of_Cups_圣杯骑士.jpeg"
   },
   {
     "id": "48",
@@ -487,7 +487,7 @@
     "suit": "cups",
     "pip": null,
     "court": "queen",
-    "image": "cards/48_Queen_of_Cups_圣杯王后.jpeg"
+    "image": "/cards/48_Queen_of_Cups_圣杯王后.jpeg"
   },
   {
     "id": "49",
@@ -497,7 +497,7 @@
     "suit": "cups",
     "pip": null,
     "court": "king",
-    "image": "cards/49_King_of_Cups_圣杯国王.jpeg"
+    "image": "/cards/49_King_of_Cups_圣杯国王.jpeg"
   },
   {
     "id": "50",
@@ -507,97 +507,97 @@
     "suit": "swords",
     "pip": "ace",
     "court": null,
-    "image": "cards/50_Ace_of_Swords_宝剑王牌.jpeg"
+    "image": "/cards/50_Ace_of_Swords_宝剑王牌.jpeg"
   },
   {
     "id": "51",
     "nameEn": "Two of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑二",
     "type": "minor",
     "suit": "swords",
     "pip": "two",
     "court": null,
-    "image": "cards/51_Two_of_Swords_宝剑�?jpeg"
+    "image": "/cards/51_Two_of_Swords_宝剑二.jpeg"
   },
   {
     "id": "52",
     "nameEn": "Three of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑三",
     "type": "minor",
     "suit": "swords",
     "pip": "three",
     "court": null,
-    "image": "cards/52_Three_of_Swords_宝剑�?jpeg"
+    "image": "/cards/52_Three_of_Swords_宝剑三.jpeg"
   },
   {
     "id": "53",
     "nameEn": "Four of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑四",
     "type": "minor",
     "suit": "swords",
     "pip": "four",
     "court": null,
-    "image": "cards/53_Four_of_Swords_宝剑�?jpeg"
+    "image": "/cards/53_Four_of_Swords_宝剑四.jpeg"
   },
   {
     "id": "54",
     "nameEn": "Five of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑五",
     "type": "minor",
     "suit": "swords",
     "pip": "five",
     "court": null,
-    "image": "cards/54_Five_of_Swords_宝剑�?jpeg"
+    "image": "/cards/54_Five_of_Swords_宝剑五.jpeg"
   },
   {
     "id": "55",
     "nameEn": "Six of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑六",
     "type": "minor",
     "suit": "swords",
     "pip": "six",
     "court": null,
-    "image": "cards/55_Six_of_Swords_宝剑�?jpeg"
+    "image": "/cards/55_Six_of_Swords_宝剑六.jpeg"
   },
   {
     "id": "56",
     "nameEn": "Seven of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑七",
     "type": "minor",
     "suit": "swords",
     "pip": "seven",
     "court": null,
-    "image": "cards/56_Seven_of_Swords_宝剑�?jpeg"
+    "image": "/cards/56_Seven_of_Swords_宝剑七.jpeg"
   },
   {
     "id": "57",
     "nameEn": "Eight of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑八",
     "type": "minor",
     "suit": "swords",
     "pip": "eight",
     "court": null,
-    "image": "cards/57_Eight_of_Swords_宝剑�?jpeg"
+    "image": "/cards/57_Eight_of_Swords_宝剑八.jpeg"
   },
   {
     "id": "58",
     "nameEn": "Nine of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑九",
     "type": "minor",
     "suit": "swords",
     "pip": "nine",
     "court": null,
-    "image": "cards/58_Nine_of_Swords_宝剑�?jpeg"
+    "image": "/cards/58_Nine_of_Swords_宝剑九.jpeg"
   },
   {
     "id": "59",
     "nameEn": "Ten of Swords",
-    "nameZh": "宝剑�?,
+    "nameZh": "宝剑十",
     "type": "minor",
     "suit": "swords",
     "pip": "ten",
     "court": null,
-    "image": "cards/59_Ten_of_Swords_宝剑�?jpeg"
+    "image": "/cards/59_Ten_of_Swords_宝剑十.jpeg"
   },
   {
     "id": "60",
@@ -607,7 +607,7 @@
     "suit": "swords",
     "pip": null,
     "court": "page",
-    "image": "cards/60_Page_of_Swords_宝剑侍从.jpeg"
+    "image": "/cards/60_Page_of_Swords_宝剑侍从.jpeg"
   },
   {
     "id": "61",
@@ -617,7 +617,7 @@
     "suit": "swords",
     "pip": null,
     "court": "knight",
-    "image": "cards/61_Knight_of_Swords_宝剑骑士.jpeg"
+    "image": "/cards/61_Knight_of_Swords_宝剑骑士.jpeg"
   },
   {
     "id": "62",
@@ -627,7 +627,7 @@
     "suit": "swords",
     "pip": null,
     "court": "queen",
-    "image": "cards/62_Queen_of_Swords_宝剑王后.jpeg"
+    "image": "/cards/62_Queen_of_Swords_宝剑王后.jpeg"
   },
   {
     "id": "63",
@@ -637,7 +637,7 @@
     "suit": "swords",
     "pip": null,
     "court": "king",
-    "image": "cards/63_King_of_Swords_宝剑国王.jpeg"
+    "image": "/cards/63_King_of_Swords_宝剑国王.jpeg"
   },
   {
     "id": "64",
@@ -647,97 +647,97 @@
     "suit": "pentacles",
     "pip": "ace",
     "court": null,
-    "image": "cards/64_Ace_of_Pentacles_星币王牌.jpeg"
+    "image": "/cards/64_Ace_of_Pentacles_星币王牌.jpeg"
   },
   {
     "id": "65",
     "nameEn": "Two of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币二",
     "type": "minor",
     "suit": "pentacles",
     "pip": "two",
     "court": null,
-    "image": "cards/65_Two_of_Pentacles_星币�?jpeg"
+    "image": "/cards/65_Two_of_Pentacles_星币二.jpeg"
   },
   {
     "id": "66",
     "nameEn": "Three of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币三",
     "type": "minor",
     "suit": "pentacles",
     "pip": "three",
     "court": null,
-    "image": "cards/66_Three_of_Pentacles_星币�?jpeg"
+    "image": "/cards/66_Three_of_Pentacles_星币三.jpeg"
   },
   {
     "id": "67",
     "nameEn": "Four of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币四",
     "type": "minor",
     "suit": "pentacles",
     "pip": "four",
     "court": null,
-    "image": "cards/67_Four_of_Pentacles_星币�?jpeg"
+    "image": "/cards/67_Four_of_Pentacles_星币四.jpeg"
   },
   {
     "id": "68",
     "nameEn": "Five of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币五",
     "type": "minor",
     "suit": "pentacles",
     "pip": "five",
     "court": null,
-    "image": "cards/68_Five_of_Pentacles_星币�?jpeg"
+    "image": "/cards/68_Five_of_Pentacles_星币五.jpeg"
   },
   {
     "id": "69",
     "nameEn": "Six of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币六",
     "type": "minor",
     "suit": "pentacles",
     "pip": "six",
     "court": null,
-    "image": "cards/69_Six_of_Pentacles_星币�?jpeg"
+    "image": "/cards/69_Six_of_Pentacles_星币六.jpeg"
   },
   {
     "id": "70",
     "nameEn": "Seven of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币七",
     "type": "minor",
     "suit": "pentacles",
     "pip": "seven",
     "court": null,
-    "image": "cards/70_Seven_of_Pentacles_星币�?jpeg"
+    "image": "/cards/70_Seven_of_Pentacles_星币七.jpeg"
   },
   {
     "id": "71",
     "nameEn": "Eight of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币八",
     "type": "minor",
     "suit": "pentacles",
     "pip": "eight",
     "court": null,
-    "image": "cards/71_Eight_of_Pentacles_星币�?jpeg"
+    "image": "/cards/71_Eight_of_Pentacles_星币八.jpeg"
   },
   {
     "id": "72",
     "nameEn": "Nine of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币九",
     "type": "minor",
     "suit": "pentacles",
     "pip": "nine",
     "court": null,
-    "image": "cards/72_Nine_of_Pentacles_星币�?jpeg"
+    "image": "/cards/72_Nine_of_Pentacles_星币九.jpeg"
   },
   {
     "id": "73",
     "nameEn": "Ten of Pentacles",
-    "nameZh": "星币�?,
+    "nameZh": "星币十",
     "type": "minor",
     "suit": "pentacles",
     "pip": "ten",
     "court": null,
-    "image": "cards/73_Ten_of_Pentacles_星币�?jpeg"
+    "image": "/cards/73_Ten_of_Pentacles_星币十.jpeg"
   },
   {
     "id": "74",
@@ -747,7 +747,7 @@
     "suit": "pentacles",
     "pip": null,
     "court": "page",
-    "image": "cards/74_Page_of_Pentacles_星币侍从.jpeg"
+    "image": "/cards/74_Page_of_Pentacles_星币侍从.jpeg"
   },
   {
     "id": "75",
@@ -757,7 +757,7 @@
     "suit": "pentacles",
     "pip": null,
     "court": "knight",
-    "image": "cards/75_Knight_of_Pentacles_星币骑士.jpeg"
+    "image": "/cards/75_Knight_of_Pentacles_星币骑士.jpeg"
   },
   {
     "id": "76",
@@ -767,7 +767,7 @@
     "suit": "pentacles",
     "pip": null,
     "court": "queen",
-    "image": "cards/76_Queen_of_Pentacles_星币王后.jpeg"
+    "image": "/cards/76_Queen_of_Pentacles_星币王后.jpeg"
   },
   {
     "id": "77",
@@ -777,6 +777,6 @@
     "suit": "pentacles",
     "pip": null,
     "court": "king",
-    "image": "cards/77_King_of_Pentacles_星币国王.jpeg"
+    "image": "/cards/77_King_of_Pentacles_星币国王.jpeg"
   }
 ]
