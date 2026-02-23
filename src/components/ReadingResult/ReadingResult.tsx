@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import classNames from 'classnames';
 import styles from './ReadingResult.module.css';
 import type { DrawnCard } from '../../utils/tarotLogic';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 interface ReadingResultProps {
     content: string; // Markdown content
@@ -107,7 +108,7 @@ export const ReadingResult: React.FC<ReadingResultProps> = ({
                                     className={styles.cardImageContainer}
                                 >
                                     <img
-                                        src={currentCard.image}
+                                        src={getAssetUrl(currentCard.image)}
                                         alt={currentCard.nameZh}
                                         className={classNames(styles.heroImage, {
                                             [styles.reversed]: currentCard.isReversed
