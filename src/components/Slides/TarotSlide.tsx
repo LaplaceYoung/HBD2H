@@ -143,6 +143,8 @@ export const TarotSlide: React.FC = () => {
         <div
             className="w-full h-full flex flex-col items-center justify-start relative overflow-y-auto"
             onWheelCapture={handleWheelCapture}
+            onTouchStart={(e) => hasStarted && e.stopPropagation()}
+            onTouchEnd={(e) => hasStarted && e.stopPropagation()}
         >
             {/* 顶部牌阵切换器 + 返回按钮 */}
             <div className="flex items-center justify-center gap-3 pt-4 pb-4 w-full shrink-0">

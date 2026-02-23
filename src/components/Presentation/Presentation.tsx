@@ -47,6 +47,36 @@ export const Presentation: React.FC<PresentationProps> = ({ slides }) => {
         }
     }, [slides.length]);
 
+    // 触屏滑动导航
+    const touchStart = useRef<number | null>(null);
+
+    const onTouchStart = (e: React.TouchEvent) => {
+        touchStart.current = e.touches[0].clientY;
+    };
+
+    const onTouchEnd = (e: React.TouchEvent) => {
+        if (touchStart.current === null) return;
+        const touchEnd = e.changedTouches[0].clientY;
+        const deltaY = touchStart.current - touchEnd;
+        const threshold = 50; // 滑动阈值
+
+        const now = Date.now();
+        if (now - lastScrollTime.current < 500) return; // 节流
+
+        if (Math.abs(deltaY) > threshold) {
+            if (deltaY > 0) {
+                // 向上滑 -> 下一页
+                setCurrentSlide((prev) => Math.min(prev + 1, slides.length - 1));
+                lastScrollTime.current = now;
+            } else {
+                // 向下滑 -> 上一页
+                setCurrentSlide((prev) => Math.max(prev - 1, 0));
+                lastScrollTime.current = now;
+            }
+        }
+        touchStart.current = null;
+    };
+
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown);
         return () => {
@@ -75,6 +105,8 @@ export const Presentation: React.FC<PresentationProps> = ({ slides }) => {
         <div
             className="relative w-screen h-[100dvh] overflow-hidden bg-black text-white font-sans"
             onWheel={handleWheel}
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
         >
             {/* 背景视频（本地静音轮播） */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-40">

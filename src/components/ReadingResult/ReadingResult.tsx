@@ -70,7 +70,11 @@ export const ReadingResult: React.FC<ReadingResultProps> = ({
     if (!loading && !content && cards.length === 0) return null;
 
     return (
-        <div className={styles.overlayModal}>
+        <div
+            className={styles.overlayModal}
+            onTouchStart={(e) => e.stopPropagation()}
+            onTouchEnd={(e) => e.stopPropagation()}
+        >
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
