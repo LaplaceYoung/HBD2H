@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './Card.module.css';
 import type { DrawnCard } from '../../utils/tarotLogic';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 interface CardProps {
     card?: DrawnCard | null;
@@ -29,14 +30,14 @@ export const Card: React.FC<CardProps> = ({
             <div className={classNames(styles.cardInner, { [styles.flipped]: isFlipped })}>
                 {/* Back of the card */}
                 <div className={classNames(styles.cardFace, styles.cardBack)}>
-                    <img src="/cards/卡背.jpeg" alt="Card Back" loading="lazy" />
+                    <img src={getAssetUrl('cards/卡背.jpeg')} alt="Card Back" loading="lazy" />
                     <div className={styles.cardGlow}></div>
                 </div>
                 {/* Front of the card */}
                 <div className={classNames(styles.cardFace, styles.cardFront)}>
                     {card && (
                         <img
-                            src={card.image}
+                            src={getAssetUrl(card.image)}
                             alt={card.nameZh}
                             loading="lazy"
                             className={classNames({ [styles.reversedImage]: card.isReversed })}

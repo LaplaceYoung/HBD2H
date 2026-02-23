@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronUp, ChevronDown, Maximize, Settings } from 'lucide-react';
 import { ApiConfigPanel } from '../ApiConfig/ApiConfigPanel';
+import { getAssetUrl } from '../../utils/assetHelper';
 
 interface PresentationProps {
     slides: React.FC[];
@@ -79,7 +80,7 @@ export const Presentation: React.FC<PresentationProps> = ({ slides }) => {
             <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
                 <video
                     ref={playerRef}
-                    src="/bg-mystical.mp4"
+                    src={getAssetUrl('bg-mystical.mp4')}
                     autoPlay
                     muted
                     loop
